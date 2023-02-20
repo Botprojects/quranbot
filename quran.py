@@ -1,9 +1,11 @@
+import os
 
 from telebot import TeleBot,telebot,types
 from telebot.types import InlineKeyboardMarkup,InlineKeyboardButton
 from telebot.util import user_link,quick_markup
 
-bot = telebot.TeleBot("5946336556:AAGHmT8guv814DDvyJZLisvdzp6H3fQE4ZA",parse_mode="HTML")
+token = os.getenv("btk")
+bot = telebot.TeleBot(token,parse_mode="HTML")
 
 kb1 = quick_markup({
 "Al-Fatihah":{"callback_data":"fa"},
