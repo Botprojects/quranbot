@@ -3,7 +3,7 @@ from telebot import TeleBot,telebot,types
 from telebot.types import InlineKeyboardMarkup,InlineKeyboardButton
 from telebot.util import user_link,quick_markup
 
-token = "5946336556:AAGHmT8guv814DDvyJZLisvdzp6H3fQE4ZA"
+token = os.getenv("btk")
 bot = telebot.TeleBot(token,parse_mode="HTML")
 
 kb1 = quick_markup({
